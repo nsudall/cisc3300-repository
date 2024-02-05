@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>homework3</title>
+    </head>
+    <body>
+
+
+        <div class="parent-container">
+
+            <div class="majors-container">
+
+                <div class="majors-content-container">
+                    <p>Majors and Minors</p>
+                    <br>
+                    <div class="grey-link-box">
+                        <a href="https://www.fordham.edu/undergraduate-admission/majors-and-minors/whats-your-passion/">What's Your Passion?</a>
+                        <a href="https://www.fordham.edu/undergraduate-admission/majors-and-minors/accelerated-degree-programs/">Accelerated Degree Programs</a>
+                    </div>
+                    <br>
+                    <div class="major-button">majors and minors</div>
+                </div>
+
+            </div>
+            <div class="computer-science-container">
+
+                <div class="computer-science-content-container">
+                    <div class="nav">
+
+                        Home
+                        <span class="divider">/</span>
+                        Admissions and Aid
+                        <span class="divider">/</span>
+                        Undergraduate Admission
+                        <span class="divider">/</span>
+                        Majors and Minors
+                        <span class="divider">/</span>
+                        <span style="color: maroon">Computer Science</span>
+
+                    </div>
+                    <br>
+                    <h1>Computer Science</h1>
+                    <br>
+                    <div>Degree Options: Major, Minor</div>
+                    <div>Locations: Lincoln Center, Rose Hill</div>
+                    <div>Visit the <a href="https://www.fordham.edu/academics/departments/computer-and-information-science/">Computer and Information Science Department</a> </div>
+                    <br>
+                    <div class="big-text">Wherever there’s a computer, there’s a skilled person developing, 
+                        maintaining, hacking, advancing or simply using it. Be that person.</div>
+                    <p><img src = chip.jpeg alt="chip" width="300" class="align-right">It’s difficult to imagine life without computers when they’re so central to our 
+                        information-driven global society. But it’s not difficult to imagine the amazing 
+                        pursuits you’ll be prepared for with a degree in computer science from Fordham’s 
+                        department of Computer and Information Sciences.</p>
+                    <p>The computer science major emphasizes science and technology, including software 
+                        design and programming, computer architecture and functions, and the development of 
+                        an ability to analyze and solve problems in using the computer as a tool.</p>
+                    <p>Get inspired by the classes we offer. Programming. Bioinformatics. Robotics. 
+                        Video game design. Cyber security. Networking. Database management. Health and 
+                        medical informatics.</p>
+                </div>
+
+            </div>
+
+        </div>
+
+        <style>
+            
+            @font-face {
+            font-family: "Raleway";
+            src: url("./Raleway-VariableFont_wght.ttf") format("truetype");
+            }
+
+            body {
+                height: 100vh;
+                font-family: Raleway;
+            }
+
+            .parent-container {
+                max-width: 1200px;
+                margin: 0 auto;
+                display: flex;
+                flex-direction: column;
+                height: 100%;
+                align-content: space-between;
+            }
+
+            .computer-science-container {
+                order: 1;
+                padding: 0 50px;
+            }
+
+            .majors-container {
+                order: 2;
+                display: flex;
+                flex-direction: column;
+                border-right: 1px solid #e7ebe7;
+                row-gap: 50px;
+            }
+
+            .grey-link-box{
+                background-color: rgb(170, 166, 166);
+                padding: 10px;
+                font-size: 14px;
+            }
+
+            .grey-link-box a:link{
+                color: black;
+                text-decoration: none;
+            }
+
+            .grey-link-box a:visited{
+                color: black;
+                text-decoration: none;
+            }
+
+            .grey-link-box a:hover{
+                color: grey;
+                text-decoration: underline;
+            }
+
+            .majors-content-container {
+                padding: 0 50px;
+            }
+
+            .majors-content-container p{
+                color: maroon;
+                font-weight: bold;
+            }
+
+            .divider {
+                padding: 0 5px;
+            }
+
+            @media screen and (min-width: 1200px) {
+
+                .parent-container {
+                    flex-direction: row;
+                }
+                .computer-science-container {
+                    width: 900px;
+                    order: 2;
+                }
+
+                .majors-container {
+                    width: 300px;
+                    order: 1
+                }
+            }
+
+            .majors-container .majors-content-container p {
+                margin: 0;
+            }
+            .major-button {
+                text-align: center;
+                background-color: maroon;
+                color:white;
+                padding: 15px;
+            }
+
+            .computer-science-container .computer-science-content-container h1 {
+                margin: 0;
+                color: maroon;
+                font-weight: normal;
+            }
+
+            .computer-science-container .computer-science-content-container a:link {
+                margin: 0;
+                color: maroon;
+            }
+
+            .computer-science-container .computer-science-content-container a:visited {
+                margin: 0;
+                color: maroon;
+            }
+
+            .computer-science-container .computer-science-content-container a:hover {
+                margin: 0;
+                color: maroon;
+                text-decoration-thickness: 2px;
+            }
+
+            .big-text {
+                font-size: 20px;
+            }
+
+            img.align-right{
+                float: right;
+                margin-left: 20px;
+            }
+
+        </style>
+
+    </body>
+</html>

@@ -1,0 +1,29 @@
+
+1) see style.css
+
+2) see nameLogo.html
+
+3) Margin is the space between the edge of the sceen and an element.Padding adds space 
+between the border of a cell and the text, making the table more readable. Borders are 
+the lines surrounding a cell on the table.
+
+4)
+    a. display: flex
+        This will establish a flex container, which can be either inline or block based 
+        on the provided value. It also creates a flex context for all of its immediate children.
+    b. flex-direction
+        This establishes the direction of the flex container, being verticle (upwards or downwards)
+        or horizontal (left to right or right to left). Flexbox is a single-direction layout so 
+        only one direction can be used
+    c. flex-wrap
+        Flex attomatically tries to fit all of the content in one line, this instruction
+        allows for content to wrap onto the following line.
+    d. justify-content/align-items
+        controls the location within the contatiner, allowing extra space to be distributed 
+        throughout the container depending on the instruction given. Justify is used to
+        place along the horizontal axis, whereas align is used for the verticle axis.
+    e. align-content
+        align-content is similar to justify-content in that it is used to to distribute
+        extra space among the elements, this time vertically. 
+
+5) see webPage.html
