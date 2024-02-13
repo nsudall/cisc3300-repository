@@ -1,0 +1,26 @@
+1) Javascript is a programming language that allows for webpages to interact dynamically 
+    with the user. The webpage can now take information entered by the user, react to 
+    certain events, and modify the content of the webpage. A compiled language uses a 
+    compiler to change code into machine code. The compiler checks codes for errors before
+    allowing code to be run, essentially "proofreading" it. Interpreted languages execute
+    each instruction line by line. These differences allow compiled languages to run faster.
+    Javascript is an interpreted language.
+
+2) var, const, and let are all keywords that allow the interpreter to know that the rest of 
+    the line is a variable declaration. Var is the basic variable declaration that is 
+    accessible throughout global and function scopes and can be altered. Const variables, 
+    however, cannot be altered once declared. Let is block scoped and is not accessible 
+    outside of it. Let's value can be altered after it is declared
+
+3) Anonymous functions do not have a function name. Instead, anonymous functions use function
+    expressions which store function values directly into a variable. That variable is then 
+    used to access the function. Higher-order functions involve other functions, whether 
+    it be returning a function, or taking function results as parameters
+
+4) Objects in Javascript include properties(variables) and methods(functions) that are 
+    common in all variations of that object. Javascript is different in its inheritance patterns, as Javascript
+    objects can inherit from other objects, which is more flexible than traditional 
+    inheritance used by Java. Javascript is also unique in that properties can be added to
+    an object after its declaration
+
+5) see cats.js and catMsg.html
