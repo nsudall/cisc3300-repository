@@ -1,0 +1,44 @@
+<html>
+    <body>
+        
+        <input onclick="update()" type="button" value="Click" id="button1"></input>
+
+        <div id = "myList">
+            <ul>
+                <li>Coffee</li>
+                <li>Tea</li>
+                <li>Milk</li>
+            </ul>
+        </div>
+
+        <div id = "button2">
+            <button>Click to create Paragraph</button>
+            <p id = "spawnPara"></p>
+        </div>
+
+
+    <script>
+        function update()
+        {
+            var button1 = document.getElementById("button1");
+            if (button1.value=="Unclick") 
+                button1.value = "Click";
+            else button1.value = "Unclick";
+        }
+
+        const myList = document.getElementById('myList');
+        myList.addEventListener('click', function onClick() {
+            if (myList.style.color=='blue') 
+                myList.style.color = 'black';
+            else myList.style.color = 'blue';
+        });
+
+        const button2 = document.getElementById('button2');
+        msg = "Hey! you clicked the Button! and now there's text! isn't that snazzy?"
+        button2.addEventListener('click', function onClick() {
+            document.getElementById('spawnPara').innerHTML = msg;
+        });
+
+    </script>
+    </body>
+</html>
