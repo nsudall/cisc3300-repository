@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>JSON Server Requests</title>
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    </head>
+
+    <body>
+        
+        <button id="get">get</button>
+        <button id="post">post</button>
+        <button id="put">put</button>
+
+
+        <script>
+            $('#get').on('click', function () {
+                $.ajax({
+                    url: 'http://localhost:3000/posts',
+                    type: "GET",
+                    dataType: "json",
+                    success: function (data) {
+                        console.log(data);
+                    },
+                    error: function(error) {
+                        console.error('Error:', error);
+                    }
+                });
+            })
+
+            $('#post').on('click', function() {
+                var newData = {
+                    age: '26',
+                };
+
+                $.ajax({
+                    url: 'http://localhost:3000/profile',
+                    type: 'POST',
+                    contentType: 'application/json',
+                    data: JSON.stringify(newData),
+                    success: function(data) {
+                        console.log(data);
+                    },
+                    error: function(error) {
+                        console.error('Error:', error);
+                    }
+                });
+            });
+
+            $('#put').on('click', function() {
+                var updatedData = {
+                    name: 'Joe',
+                };
+
+                $.ajax({
+                    url: 'http://localhost:3000/profile', 
+                    type: 'PUT',
+                    contentType: 'application/json',
+                    data: JSON.stringify(updatedData),
+                    success: function(data) {
+                        console.log(data);
+                    },
+                    error: function(error) {
+                        console.error('Error:', error);
+                    }
+                });
+            });
+        </script>
+
+    </body>
+</html>

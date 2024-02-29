@@ -1,0 +1,21 @@
+
+1. HTTP or hypertext transfer protocol is the method for linking user requests with server responses.
+Common request methods include get, post, put, patch, and delete. Get is used to retrieve data, post
+adds data to a file, typically saving data onto the website, put is similar to a search and replace, it
+finds and relpaces all occurances of the target resource with the request resource. Pacth is similar
+to post as it modifys a portion of a resource, and delete will remove the resource.
+
+2. APIs or application programming interface are a method for communication between multiple computers
+or programs. Types include browser APIs, jQuery APIs, and Platform APIs. They allow for features
+such a geolocation, local storage, user interfaces, and posting data onto their site. JSON stands for 
+JavaScript object notation, which is text data that can then be translated into javascript, or the other
+way around
+
+3. AJAX or Asynchronous JavaScript And XML allows for fetching data through asynchronous requests for 
+a section of a page without requiring the entire page be refreshed. Asynchronous code can run in the 
+background without blocking the rest of the code from running. Essentially, the section of code that 
+is waiting for the data request can run in the background while the rest of the code develops
+
+4. see request.html
+
+5. see wether.html
